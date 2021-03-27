@@ -24,6 +24,12 @@ with open('LatencyTraining.csv', newline='') as csvfile:
 # text_file.write(dataset_str)
 # text_file.close()
 
+# with open('data_ngrams.csv', 'w', newline='') as csvfile:
+#     writer = csv.writer(csvfile, delimiter=',')
+#     for k in range(3, len(dataset)):
+#         writer.writerow(dataset[:k])
+
+
 l = len(dataset)
 ma_length = 3
 preds = [0, 0, 0]
