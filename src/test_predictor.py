@@ -27,7 +27,10 @@ with open('LatencyTraining.csv', newline='') as csvfile:
 # with open('data_ngrams.csv', 'w', newline='') as csvfile:
 #     writer = csv.writer(csvfile, delimiter=',')
 #     for k in range(3, len(dataset)):
-#         writer.writerow(dataset[:k])
+#         if k < 500:
+#             writer.writerow(dataset[:k])
+#         else:
+#             writer.writerow(dataset[k-500:k])
 
 
 l = len(dataset)
