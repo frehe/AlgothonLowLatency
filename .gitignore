@@ -30,8 +30,8 @@
 *.exe
 *.out
 *.app
-bin
+bin/
 
 # VS Code
-.vscode
-env
+.vscode/
+env/
