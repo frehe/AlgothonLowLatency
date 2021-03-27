@@ -77,6 +77,8 @@ int main()
 
     while (std::cin >> s)
     {
+        v.clear();
+        printf("Input row: %s\n", s.c_str());
         // Parse string to vector
         std::stringstream stream(s);
         for (float i; stream >> i;)
@@ -87,6 +89,10 @@ int main()
                 stream.ignore();
             }
         }
+        printf("Vector: ");
+        for (std::vector<float>::const_iterator i = v.begin(); i != v.end(); ++i)
+            std::cout << *i << ' ';
+        std::cout << std::endl;
         // Print prediction
         std::cout << predict(v) << std::endl;
     }
