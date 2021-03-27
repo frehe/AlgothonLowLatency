@@ -32,6 +32,9 @@
 *.app
 bin/
 
+# Pycache
+*.pyc
+
 # VS Code
 .vscode/
 env/
