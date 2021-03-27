@@ -31,6 +31,9 @@
 *.out
 *.app
 
+# Pycache
+*.pyc
+
 # VS Code
 .vscode
 env
